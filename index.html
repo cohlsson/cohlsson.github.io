@@ -25,17 +25,17 @@
       }
     }
 </style>
-<body class="d-flex h-100 text-center text-white bg-dark">
+<body class="d-flex h-100 text-center text-white bg-custom">
   <div class="quiz-container container cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
     <header class="mb-auto">
       <div>
-        <h3 class="float-md-start mb-0">True You Quiz</h3>
+        <h3 class="float-md-start mb-0"><a href="https://trueyouquiz.com/" class="nav-link">True<span class="cream">You</span>Quiz</a></h3>
       </div>
     </header>
     <main class="px-3">
       <div class="row">
         <div class="col-12">
-          <h1>True You Quiz</h1>
+          <h1>True<span class="cream">You</span>Quiz</h1>
           <div class="gotcha-ali">
             <div id="question" class="question form-label"></div>
             <label for="option1" class="option form-label">
@@ -61,7 +61,8 @@
       </div>
     </main>
     <footer class="mt-auto text-white-50">
-      <p>Quiz developed and maintained through open sourcing.  Legal literature found here: <a href="https://opensource.guide/legal/" class="text-white">Open Source</a>.</p>
+      <p>Quiz developed and maintained through open sourcing.  <br>
+        Legal literature found here: <a href="https://opensource.guide/legal/" class="text-white">Open Source</a>.</p>
     </footer>
   </div>
 
@@ -76,7 +77,7 @@
         "answer2Total": "2",
         "answer3": "over 30",
         "answer3Total": "3"
-      },
+      }/*,
       {
         "question": "I am very imaginative.",
         "answer1": "Agree",
@@ -179,7 +180,7 @@
         "answer2Total": "2",
         "answer3": "I am all over the place!",
         "answer3Total": "3"
-      },
+      },*/
     ]
     let currentQuestion = 0;
     let score = [];
@@ -240,13 +241,16 @@
       if(currentQuestion == totalQuestions) {
         container.style.display = 'none';
         result.innerHTML =
-          `<h1 class="final-score">Here is an arbitrary number we made up: ${totalScore}</h1>
+          `<h3 class="final-score">Here is an arbitrary number we made up: <span class="cream">${totalScore}</span></h3>
           <div class="summary">
-            <h1>This means absolutely nothing.</h1>
-            <h2>Here is Max</h2>
+            <h3 class="cream">This means absolutely nothing.</h3>
+            <h3>Here is Max...</h3>
             <img src="max.JPG" class="img-fluid" alt="Responsive image">
           </div>
-          <button class="restart">Restart Quiz</button>
+          <br>
+          <button type="button" class="btn btn-light restart">Restart Quiz</button>
+          <br>
+          <br>
           `;
           return;
       }

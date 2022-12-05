@@ -50,6 +50,10 @@
                 <input type="radio" name="option" value="3" />
                 <span class="option3"></span>
             </label>
+            <label for="option4" class="option form-label">
+              <input type="radio" name="option" value="4" />
+              <span class="option4"></span>
+            </label>
             <!-- Buttons -->
             <div class="controls">
                 <button type="button" class="btn btn-light previous">Previous</button>
@@ -75,9 +79,11 @@
         "answer1Total": "1",
         "answer2": "18 - 30",
         "answer2Total": "2",
-        "answer3": "over 30",
-        "answer3Total": "3"
-      }/*,
+        "answer3": "30 - 49",
+        "answer3Total": "3",
+        "answer4": "4",
+        "answer4Total": "over 50"
+      },
       {
         "question": "I am very imaginative.",
         "answer1": "Agree",
@@ -180,7 +186,7 @@
         "answer2Total": "2",
         "answer3": "I am all over the place!",
         "answer3Total": "3"
-      },*/
+      },
     ]
     let currentQuestion = 0;
     let score = [];
@@ -205,7 +211,7 @@
       const option3Total = questions[index].answer3Total;
       //Populate html elements
       questionEl.innerHTML = `${index + 1}. ${question.question}`
-      option1.setAttribute('data-total', `${option1Total}`);
+      option1.setAttribute('data-total', `${option1Total}`); 
       option2.setAttribute('data-total', `${option2Total}`);
       option3.setAttribute('data-total', `${option3Total}`);
       option1.innerHTML = `${question.answer1}`

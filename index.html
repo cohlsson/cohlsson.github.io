@@ -76,7 +76,7 @@
     // QUESTIONS
     const questions = [
       {
-        "question": "Age range?",
+        "question": "Give us an idea of your age?",
         "answer1": "under 18",
         "answer1Total": "1",
         "answer2": "18 - 30",
@@ -88,12 +88,14 @@
       },
       {
         "question": "I am very imaginative.",
-        "answer1": "Agree",
+        "answer1": "Completely Agree",
         "answer1Total": "1",
-        "answer2": "Neutral",
+        "answer2": "Somewhat Agree",
         "answer2Total": "2",
-        "answer3": "Disagree",
-        "answer3Total": "3"
+        "answer3": "Somewhat Disagree",
+        "answer3Total": "3",
+        "answer4": "Completely Disagree",
+        "answer4Total": "100"
       },
       {
         "question":
@@ -103,17 +105,22 @@
         "answer2": "Money, Career, Love",
         "answer2Total": "3",
         "answer3": "Career, Love, Money",
-        "answer3Total": "2"
+        "answer3Total": "2",
+        "answer4": "Love, Money, Career",
+        "answer4Total": "4"
       },
       {
-        "question": "Best Sentence to describe you?",
+        "question": "Of these sentences choose which one would best describe you?",
         "answer1": "You feel superior to other people.",
         "answer1Total": "3",
         "answer2": "You consider yourself more practical than creative.",
         "answer2Total": "2",
         "answer3":
         "Winning a debate matters less to you than making sure no one gets upset.",
-        "answer3Total": "1"
+        "answer3Total": "1",
+        "answer4":
+        "Your love knows no boundaries.",
+        "answer4Total": "1000"
       },
       {
         "question": "Which best describes your relationship with food",
@@ -122,7 +129,9 @@
         "answer2": "You tend to eat snacks secretly.",
         "answer2Total": "2",
         "answer3": "You prepare food and don't even look at the recipe.",
-        "answer3Total": "3"
+        "answer3Total": "3",
+        "answer4": "You are very particular and tend to have many foods that you avoid.",
+        "answer4Total": "9"
       },
       {
         "question":
@@ -130,46 +139,56 @@
         "answer1":
         "Say \"whatever\" and plan a night that'll be GREAT so they don't cancel again.",
         "answer1Total": "3",
-        "answer2": "Feel hurt because you were looking forward to tonight.",
+        "answer2": "Feel hurt because you were looking forward to the time you were going to spend together.",
         "answer2Total": "2",
         "answer3": "No problem, you kinda wanted to stay home anyway.",
-        "answer3Total": "1"
+        "answer3Total": "1",
+        "answer4": "Contact another friend to try and salvage the day.",
+        "answer4Total": "25"
       },
       {
         "question": "Which of the following colors do you like most?",
         "answer1": "Black",
         "answer1Total": "1",
-        "answer2": "Yellow or light blue",
+        "answer2": "Yellow",
         "answer2Total": "2",
-        "answer3": "Red or orange",
-        "answer3Total": "3"
+        "answer3": "Red",
+        "answer3Total": "3",
+        "answer4": "Blue",
+        "answer4Total": "3"
       },
       {
-        "question": "Would you describe yourself as trustworthy?",
-        "answer1": "Yes",
+        "question": "You are a trustworthy person.",
+        "answer1": "Completely Agree",
         "answer1Total": "1",
-        "answer2": "No",
+        "answer2": "Somewhat Agree",
         "answer2Total": "2",
-        "answer3": "Somewhat",
-        "answer3Total": "3"
+        "answer3": "Somewhat Disagree",
+        "answer3Total": "3",
+        "answer4": "Completely Disagree",
+        "answer4Total": "100"
       },
       {
-        "question": "Are you a passionate person?",
-        "answer1": "Yes",
+        "question": "You are a passionate person.",
+        "answer1": "Completely Agree",
         "answer1Total": "1",
-        "answer2": "No",
+        "answer2": "Somewhat Agree",
         "answer2Total": "2",
-        "answer3": "Neutral",
-        "answer3Total": "3"
+        "answer3": "Somewhat Disagree",
+        "answer3Total": "3",
+        "answer4": "Completely Disagree",
+        "answer4Total": "100"
       },
       {
-        "question": "Choose a shoe",
-        "answer1": "Sandal",
+        "question": "You like meeting new people.",
+        "answer1": "Completely Agree",
         "answer1Total": "1",
-        "answer2": "Athletic",
+        "answer2": "Somewhat Agree",
         "answer2Total": "2",
-        "answer3": "Casual",
-        "answer3Total": "3"
+        "answer3": "Somewhat Disagree",
+        "answer3Total": "3",
+        "answer4": "Completely Disagree",
+        "answer4Total": "100"
       },
       {
         "question": "Do you use mindset tools to help keep your mind \"fit\"?",
@@ -178,16 +197,75 @@
         "answer2": "No and I am not really interested",
         "answer2Total": "2",
         "answer3": "Occasionally, but I would love to explore more",
-        "answer3Total": "3"
+        "answer3Total": "3",
+        "answer4": "I generally avoid them.",
+        "answer4Total": "15"
       },
       {
-        "question": "Are you focused?",
-        "answer1": "Super Focused",
+        "question": "You are a very focused person.",
+        "answer1": "Completely Agree",
         "answer1Total": "1",
-        "answer2": "Sometimes",
+        "answer2": "Somewhat Agree",
         "answer2Total": "2",
-        "answer3": "I am all over the place!",
-        "answer3Total": "3"
+        "answer3": "Somewhat Disagree",
+        "answer3Total": "3",
+        "answer4": "Completely Disagree",
+        "answer4Total": "100"
+      },
+      {
+        "question": "You can get frustrated very easily.",
+        "answer1": "Completely Agree",
+        "answer1Total": "1",
+        "answer2": "Somewhat Agree",
+        "answer2Total": "2",
+        "answer3": "Somewhat Disagree",
+        "answer3Total": "3",
+        "answer4": "Completely Disagree",
+        "answer4Total": "100"
+      },
+      {
+        "question": "How long does it take you to calm down when you've been angry?",
+        "answer1": "Less than 1 hour",
+        "answer1Total": "1",
+        "answer2": "Several Hours",
+        "answer2Total": "2",
+        "answer3": "Almost a Day",
+        "answer3Total": "3",
+        "answer4": "Multiple Days",
+        "answer4Total": "100"
+      },
+      {
+        "question": "You get overwhelmed often.",
+        "answer1": "Completely Agree",
+        "answer1Total": "1",
+        "answer2": "Somewhat Agree",
+        "answer2Total": "2",
+        "answer3": "Somewhat Disagree",
+        "answer3Total": "3",
+        "answer4": "Completely Disagree",
+        "answer4Total": "100"
+      },
+      {
+        "question": "You can be pushy.",
+        "answer1": "Completely Agree",
+        "answer1Total": "1",
+        "answer2": "Somewhat Agree",
+        "answer2Total": "2",
+        "answer3": "Somewhat Disagree",
+        "answer3Total": "3",
+        "answer4": "Completely Disagree",
+        "answer4Total": "100"
+      },
+      {
+        "question": "You prefer being busy over relaxing.",
+        "answer1": "Completely Agree",
+        "answer1Total": "1",
+        "answer2": "Somewhat Agree",
+        "answer2Total": "2",
+        "answer3": "Somewhat Disagree",
+        "answer3Total": "3",
+        "answer4": "Completely Disagree",
+        "answer4Total": "100"
       },
     ]
     let currentQuestion = 0;
@@ -253,11 +331,11 @@
       if(currentQuestion == totalQuestions) {
         container.style.display = 'none';
         result.innerHTML =
-          `<h3 class="final-score">Here is an arbitrary number we made up: <span class="cream">${totalScore}</span></h3>
+          `<h3 class="final-score">Here is a number that makes complete sense and I (the quiz) did not completely make up: <span class="cream">${totalScore}</span></h3>
           <div class="summary">
-            <h3 class="cream">This means absolutely nothing.</h3>
-            <h3>Here is Max...</h3>
-            <img src="max.JPG" class="img-fluid" alt="Responsive image">
+            <h3 class="cream">This number means everything.</h3>
+            <h3>Here is Fjord...</h3>
+            <img src="Fjord.jpg" class="img-fluid" alt="Fjord boi">
           </div>
           <br>
           <button type="button" class="btn btn-light restart">Restart Quiz</button>
